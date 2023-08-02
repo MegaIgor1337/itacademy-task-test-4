@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: insertRandomUsers
+      author: Igor
+      changes:
+        - sql:
+            sql: >
+              INSERT INTO users (name, surname, patronymic, email, role)
+              VALUES
+                ('John', 'Doe', 'Smith', 'john.doe@example.com', 'ADMIN'),
+                ('Jane', 'Smith', 'Johnson', 'jane.smith@example.com', 'SALE_USER'),
+                ('Michael', 'Johnson', 'Williams', 'michael.johnson@example.com', 'CUSTOMER_USER'),
+                ('Emily', 'Williams', 'Brown', 'emily.williams@example.com', 'SECURE_API_USER'),
+                ('William', 'Brown', 'Jones', 'william.brown@example.com', 'ADMIN'),
+                ('Olivia', 'Jones', 'Miller', 'olivia.jones@example.com', 'SALE_USER'),
+                ('James', 'Miller', 'Davis', 'james.miller@example.com', 'CUSTOMER_USER'),
+                ('Sophia', 'Davis', 'Garcia', 'sophia.davis@example.com', 'SECURE_API_USER'),
+                ('Benjamin', 'Garcia', 'Rodriguez', 'benjamin.garcia@example.com', 'ADMIN'),
+                ('Isabella', 'Rodriguez', 'Martinez', 'isabella.rodriguez@example.com', 'SALE_USER'),
+                ('Liam', 'Martinez', 'Hernandez', 'liam.martinez@example.com', 'CUSTOMER_USER'),
+                ('Mia', 'Hernandez', 'Lopez', 'mia.hernandez@example.com', 'SECURE_API_USER'),
+                ('Ethan', 'Lopez', 'Gonzalez', 'ethan.lopez@example.com', 'ADMIN'),
+                ('Ava', 'Gonzalez', 'Wilson', 'ava.gonzalez@example.com', 'SALE_USER'),
+                ('Noah', 'Wilson', 'Anderson', 'noah.wilson@example.com', 'CUSTOMER_USER');

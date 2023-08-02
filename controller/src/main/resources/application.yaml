@@ -1,0 +1,6 @@
+logging:
+  file:
+    name: itacademy.log
+    path: /
+  level:
+    root: INFO

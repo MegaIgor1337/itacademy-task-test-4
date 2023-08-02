@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-constraints-to-users
+      author: Igor
+      changes:
+        - modifyDataType:
+            tableName: users
+            columnName: surname
+            newDataType: varchar(40)
+        - modifyDataType:
+            tableName: users
+            columnName: name
+            newDataType: varchar(20)
+        - modifyDataType:
+            tableName: users
+            columnName: patronymic
+            newDataType: varchar(40)
+        - modifyDataType:
+            tableName: users
+            columnName: email
+            newDataType: varchar(50)
